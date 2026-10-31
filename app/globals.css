@@ -1,0 +1,182 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #030914;
+  color: #e0f7ff;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding: 25px;
+  background:
+    radial-gradient(circle at center, #102b49 0%, #030914 65%);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #164e75;
+  padding: 20px;
+}
+
+.topbar h2 {
+  color: #38bdf8;
+  letter-spacing: 5px;
+}
+
+.online {
+  color: #22e6a8;
+  font-size: 12px;
+}
+
+.hero {
+  text-align: center;
+  padding: 65px 15px;
+}
+
+.orb {
+  width: 170px;
+  height: 170px;
+  margin: auto;
+  border: 3px solid #38bdf8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px #0284c7,
+              inset 0 0 30px #0284c7;
+  animation: glow 3s infinite alternate;
+}
+
+.orb-inner {
+  width: 115px;
+  height: 115px;
+  border: 2px solid #7dd3fc;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 65px;
+  color: #7dd3fc;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 15px #0284c7; }
+  to { box-shadow: 0 0 45px #38bdf8; }
+}
+
+.hero h1 {
+  margin-top: 35px;
+  color: #7dd3fc;
+  letter-spacing: 5px;
+}
+
+.hero p {
+  margin: 15px;
+  color: #94a3b8;
+}
+
+.status {
+  color: #22e6a8;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.chat {
+  max-width: 750px;
+  margin: auto;
+  padding: 25px;
+  border: 1px solid #155e85;
+  border-radius: 15px;
+  background: #071629;
+  box-shadow: 0 0 20px #07598533;
+}
+
+.chat h2 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.messages {
+  min-height: 130px;
+  color: #bae6fd;
+  line-height: 2;
+  overflow-wrap: anywhere;
+}
+
+.welcome {
+  color: #64748b;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.input-area input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid #155e85;
+  border-radius: 8px;
+  background: #020817;
+  color: white;
+  outline: none;
+}
+
+.input-area button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #0284c7;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-area button:hover {
+  background: #0ea5e9;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #64748b;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 500px) {
+  .dashboard {
+    padding: 12px;
+  }
+
+  .topbar {
+    padding: 12px 5px;
+  }
+
+  .hero {
+    padding: 45px 5px;
+  }
+
+  .orb {
+    width: 140px;
+    height: 140px;
+  }
+
+  .orb-inner {
+    width: 95px;
+    height: 95px;
+  }
+
+  .input-area button {
+    padding: 12px;
+  }
+}
